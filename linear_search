@@ -1,0 +1,27 @@
+public class linear_search {
+
+    public static void find(int[] arr,int item){
+
+        for(int i =0; i<arr.length; i++){
+            if(arr[i] == item){
+
+                System.out.println(item + "Element Found at Location"+ i);
+                return;
+
+            }
+            else{
+                System.out.println("Element not found");
+            }
+        }
+
+    }
+
+    public static void main(String[] args){
+        int[] arr = {20,40,30,10,50};
+        int n = arr.length;
+
+        int item = 20;
+        find(arr,item);
+    }
+
+}
