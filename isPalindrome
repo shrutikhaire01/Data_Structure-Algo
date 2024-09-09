@@ -1,0 +1,26 @@
+public class Palindrome {
+
+    public static boolean isPalindrome(String s){
+
+        int si = 0;
+        int ei = s.length()-1;
+
+        while(si < ei){
+            if(s.charAt(si)!=s.charAt(ei)){
+                return false;
+            }
+            si++;
+            ei--;
+        }
+        return true;
+
+    }
+
+    public static void main(String[] args){
+
+        String s = "racecar";
+        System.out.println("Its Palindrom"+isPalindrome(s));
+
+    }
+
+}
